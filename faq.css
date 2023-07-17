@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto:wght@100&display=swap");
+body {
+  background-color: #f2f2f2;
+  color: #0d0d0d;
+  direction: rtl;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-family: "pattaya";
+  color: #0d0d0d;
+  transition: 1s;
+}
+
+h1:hover {
+  color: #9453a6;
+  font-size: 8vh;
+}
+
+h2,
+h4,
+h5 {
+  font-family: "henny-penny";
+}
+
+h4:hover {
+  color: #8cbf3f;
+}
+
+h2 {
+  padding: 1vw;
+}
+
+p {
+  text-align: justify;
+  padding: 3vw;
+}
+
+header {
+  direction: ltr;
+}
+
+.navbar {
+  background-color: #9453a6;
+  position: relative;
+  height: 40vh;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .halufi {
+    display: none;
+  }
+}
+.thetoggler {
+  background-color: #8cbf3f;
+}
+
+@media screen and (min-width: 768px) {
+  .thetoggler {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .halufi {
+    height: 10vh;
+    width: 23vw;
+    overflow: auto;
+    background-color: #f2cc0f;
+    border-radius: 30%;
+    border: solid #0d0d0d;
+    font-weight: 600;
+    margin-block: 1vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .collapse {
+    position: absolute;
+    top: 7vh;
+    width: 35vw;
+    margin-right: -75vw;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+  }
+}
+.container-fluid {
+  background-color: #f2cc0f;
+  position: absolute;
+  top: 0vh;
+}
+
+.holonlogo {
+  position: absolute;
+  top: 8vh;
+  right: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+  .holonlogo {
+    position: absolute;
+    top: 3vh;
+    height: 20vh;
+    width: 40vw;
+  }
+}
+.p-5 {
+  background-color: #f2f2f2;
+}
+
+.accordion-item {
+  background-color: #f2f2f2;
+  direction: rtl;
+}
+
+.accordion-header {
+  background-color: #f2f2f2;
+}
+
+.accordion-button {
+  background-color: #8cbf3f;
+  text-align: center;
+  direction: rtl;
+}
+
+.accordion-button:active {
+  background-color: #f2cc0f;
+}
+
+.accordion-button:focus {
+  background-color: #f2cc0f;
+}
+
+.btn {
+  color: #0d0d0d;
+  background-color: #f2cc0f;
+  transition: 1s;
+  border: solid #0d0d0d;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #9453a6;
+  border: solid #0d0d0d;
+}
+
+.btn:active {
+  background-color: #f2f2f2;
+}
+
+.footer {
+  background-color: #9453a6;
+  height: 30vh;
+  position: relative;
+}
+.footer p {
+  position: absolute;
+  left: 0vw;
+  top: 12vh;
+  color: #0d0d0d;
+}/*# sourceMappingURL=faq.css.map */

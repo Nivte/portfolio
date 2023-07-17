@@ -1,0 +1,301 @@
+$blackcolor: #0d0d0d;
+$whitecolor: #f2f2f2;
+$yellowcolor: #f2cc0f;
+$greencolor: #8cbf3f;
+$purplecolor: #9453a6;
+$cardheight: 15vh;
+$cardimgheight: 20vh;
+
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto:wght@100&display=swap");
+
+body {
+  position: relative;
+  background-color: $whitecolor;
+  color: $blackcolor;
+  direction: rtl;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-family: "pattaya";
+  color: $blackcolor;
+  transition: 1s;
+  text-align: center;
+}
+h1:hover {
+  color: $purplecolor;
+  font-size: 8vh;
+}
+
+h2,
+h4,
+h5 {
+  font-family: "henny-penny";
+}
+h4:hover {
+  color: $greencolor;
+}
+h2 {
+  padding: 1vw;
+}
+p {
+  text-align: justify;
+  padding: 3vw;
+}
+
+header {
+  direction: ltr;
+}
+
+.navbar {
+  background-color: $purplecolor;
+  position: relative;
+  height: 40vh;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .halufi {
+    display: none;
+  }
+}
+
+.thetoggler {
+  background-color: $greencolor;
+}
+
+@media screen and (min-width: 768px) {
+  .thetoggler {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .halufi {
+    height: 10vh;
+    width: 23vw;
+    overflow: auto;
+    background-color: $greencolor;
+    border-radius: 30%;
+    border: solid $blackcolor;
+    font-weight: 600;
+    margin-block: 1vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .collapse {
+    position: absolute;
+    top: 7vh;
+    width: 35vw;
+    margin-right: -75vw;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+}
+.container-fluid {
+  background-color: $yellowcolor;
+  position: absolute;
+  top: 0vh;
+}
+
+.holonlogo {
+  position: absolute;
+  top: 8vh;
+  right: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+  .holonlogo {
+    position: absolute;
+    top: 3vh;
+    height: 20vh;
+    width: 40vw;
+  }
+}
+
+.p-5 {
+  background-color: $whitecolor;
+}
+
+.contactinf {
+  height: 50vh;
+  width: 20vw;
+  position: absolute;
+  background-color: $yellowcolor;
+  border: solid $blackcolor;
+
+  & .dagesh {
+    padding: 1vh;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contactinf {
+    width: 70vw;
+    height: 50vh;
+    margin-inline: 15vw;
+    margin-bottom: 20vh;
+  }
+}
+
+form {
+height: 100vh;
+  width: 50vw;
+  margin-inline: 25vw;
+  background-color: $greencolor;
+  border: solid $blackcolor;
+  text-align: center;
+
+  & label {
+    margin-top: 2vh;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  form {
+    margin-top: 120vh;
+    width: 70vw;
+    margin-inline: 15vw;
+    height: 90vh;
+  }
+}
+
+input {
+  background-color: $whitecolor;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .labfirst {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .inpfirst {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .inpfirstm {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .labsur {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .inpsur {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .inpsurm {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .labmail {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .inpmail {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .inpmailm {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .labmes {
+    display: none;
+  }
+}
+
+textarea {
+  text-align: center;
+  margin-bottom: -8vh;
+  background-color: $whitecolor;
+  height: 40%;
+  width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  .inpmes {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .inpmesm {
+    display: none;
+  }
+}
+
+iframe {
+  height: 50vh;
+  width: 20vw;
+  position: absolute;
+  top: 58.4vh;
+  right: 1vw;
+  border: solid $blackcolor;
+}
+
+@media screen and (max-width: 768px) {
+  iframe {
+    height: 40vh;
+    width: 70vw;
+    margin-top: 60vh;
+    margin-inline: 15vw;
+  }
+}
+
+button {
+  color: $blackcolor;
+  background-color: $yellowcolor;
+  border-radius: 15%;
+  height: 6vh;
+  font-weight: 600;
+}
+
+.btn {
+  color: $blackcolor;
+  background-color: $yellowcolor;
+  transition: 1s;
+  border: solid $blackcolor;
+  width: 100%;
+}
+.btn:hover {
+  background-color: $purplecolor;
+  border: solid $blackcolor;
+}
+.btn:active {
+  background-color: $whitecolor;
+}
+
+.footer {
+  background-color: $purplecolor;
+  height: 30vh;
+  position: relative;
+
+  & p {
+    position: absolute;
+    left: 0vw;
+    top: 12vh;
+    color: $blackcolor;
+  }
+}

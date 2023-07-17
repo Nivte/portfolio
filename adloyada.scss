@@ -1,0 +1,270 @@
+$blackcolor: #0d0d0d;
+$whitecolor: #f2f2f2;
+$yellowcolor: #f2cc0f;
+$greencolor: #8cbf3f;
+$purplecolor: #9453a6;
+$cardheight: 15vh;
+$cardimgheight: 20vh;
+
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto:wght@100&display=swap");
+
+body {
+  color: $blackcolor;
+  direction: rtl;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+h1 {
+  font-family: "pattaya";
+  color: $blackcolor;
+  transition: 1s;
+}
+h1:hover {
+  color: $purplecolor;
+  font-size: 8vh;
+}
+
+h2,
+h4,
+h5 {
+  font-family: "henny-penny";
+}
+
+h4:hover {
+  color: $greencolor;
+}
+
+h2 {
+  padding: 1vw;
+}
+p {
+  text-align: justify;
+  padding: 3vw;
+}
+
+header {
+  direction: ltr;
+}
+
+.navbar {
+  background-color: $purplecolor;
+  font-weight: 600;
+  position: relative;
+  height: 15vh;
+}
+
+@media screen and (min-width: 768px) {
+  .halufi {
+    display: none;
+  }
+}
+
+.thetoggler {
+  background-color: $greencolor;
+}
+
+@media screen and (min-width: 768px) {
+  .thetoggler {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .halufi {
+    height: 10vh;
+    width: 23vw;
+    overflow: auto;
+    background-color: $yellowcolor;
+    border-radius: 30%;
+    border: solid $blackcolor;
+    font-weight: 600;
+    margin-block: 1vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .collapse {
+    position: absolute;
+    top: 7vh;
+    width: 35vw;
+    margin-right: -75vw;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.container-fluid {
+  background-color: $yellowcolor;
+  position: absolute;
+  top: 0vh;
+}
+
+.holonlogo {
+  position: absolute;
+  height: 14vh;
+  top: 1vh;
+  right: 2vw;
+}
+.p-5 {
+  background-color: $whitecolor;
+  height: 60vh;
+  z-index: 4;
+
+  & h1 {
+    margin-top: 20vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .p-5 {
+    height: 80vh;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hidden {
+    display: none;
+  }
+}
+
+.carousel-item {
+  height: 100vh;
+}
+@media screen and (max-width: 768px) {
+  .carousel-item {
+    margin-bottom: -50vh;
+  }
+}
+
+.carousel-caption {
+  background-color: $yellowcolor;
+  opacity: 0.8;
+
+  color: black;
+  height: 13vh;
+
+  font-family: "roboto", sans-serif;
+}
+
+.ko-tiur {
+  font-family: "pattaya";
+  font-size: 4vh;
+  font-weight: 600;
+  margin-top: -3vh;
+  margin-bottom: -6vh;
+}
+.tiur {
+  text-align: center;
+  font-family: "roboto", sans-serif;
+}
+
+.hesberim {
+  background-color: $whitecolor;
+  margin-bottom: -3vh;
+}
+
+.artic2 {
+  background-color: $greencolor;
+}
+.sponsors {
+  height: 50vh;
+  background-color: $greencolor;
+}
+.oursponsors {
+  direction: rtl;
+  font-weight: 600;
+}
+.containersponsors {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .containersponsors {
+    margin-top: 8vh;
+  }
+}
+
+.cardback {
+  height: $cardheight;
+  background-color: $whitecolor;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .cardback {
+    height: 7vh;
+  }
+}
+
+.card-img {
+  height: $cardimgheight;
+}
+
+@media screen and (max-width: 768px) {
+  .card-img {
+    height: 20vw;
+  }
+}
+
+.card-title {
+  text-align: center;
+  font-family: "roboto", sans-serif;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  .card-title {
+    display: none;
+  }
+}
+
+.btn {
+  color: $blackcolor;
+  background-color: $yellowcolor;
+  transition: 1s;
+  border: solid $blackcolor;
+  width: 80%;
+  font-weight: 600;
+  margin-inline: 10%;
+
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .btn {
+    height: 4vh;
+    font-size: 0.7vh;
+    position: absolute;
+    top: 2vh;
+  }
+}
+.btn:hover {
+  background-color: $purplecolor;
+  border: solid $blackcolor;
+}
+.btn:active {
+  background-color: $whitecolor;
+}
+
+.footer {
+  background-color: $purplecolor;
+  height: 30vh;
+  position: relative;
+
+  & p {
+    position: absolute;
+    left: 0vw;
+    top: 12vh;
+    color: $blackcolor;
+  }
+}

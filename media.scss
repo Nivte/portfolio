@@ -1,0 +1,250 @@
+$blackcolor: #0d0d0d;
+$whitecolor: #f2f2f2;
+$yellowcolor: #f2cc0f;
+$greencolor: #8cbf3f;
+$purplecolor: #9453a6;
+$cardheight: 15vh;
+$cardimgheight: 20vh;
+
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto:wght@100&display=swap");
+
+body {
+  background-color: $whitecolor;
+  color: $blackcolor;
+  direction: rtl;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-family: "pattaya";
+  direction: rtl;
+  padding: 3vh;
+  color: $blackcolor;
+  transition: 1s;
+  text-align: center;
+}
+h1:hover {
+  color: $purplecolor;
+  font-size: 8vh;
+}
+
+h2,
+h4,
+h5 {
+  font-family: "henny-penny";
+  direction: rtl;
+  padding: 3vh;
+  color: $blackcolor;
+}
+h4:hover {
+  color: $greencolor;
+}
+h2 {
+  padding: 1vw;
+}
+
+p {
+  text-align: justify;
+  padding: 3vw;
+}
+
+header {
+  direction: ltr;
+}
+
+.navbar {
+  background-color: $purplecolor;
+  position: relative;
+  height: 40vh;
+  font-weight: 600;
+}
+
+@media screen and (min-width:768px) {
+  .halufi {
+    display: none;
+  }
+}
+
+.thetoggler {
+  background-color: $greencolor;
+}
+
+@media screen and (min-width: 768px) {
+  .thetoggler {
+    display: none;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .halufi {
+    height: 10vh;
+    width: 23vw;
+    overflow: auto;
+    background-color: $yellowcolor;
+    border-radius: 30%;
+    border: solid $blackcolor;
+    font-weight: 600;
+    margin-block:1vh;
+    margin-inline-start: -5vw ;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+
+.collapse {
+  position: absolute;
+  top: 7vh;
+  width: 35vw;
+     margin-right: -75vw;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  }
+}
+
+
+.container-fluid {
+  background-color: $yellowcolor;
+  position: absolute;
+  top: 0vh;
+}
+
+.holonlogo {
+  position: absolute;
+  top: 8vh;
+  right: 2vw;
+  height: 35.1vh;
+  width: 15.6vw;
+}
+
+@media screen and (max-width:768px) {
+  .holonlogo {
+    position: absolute;
+    top: 3vh;
+    height: 20vh;
+    width: 40vw;
+  }
+}
+
+.p-5 {
+  background-color: $whitecolor;
+}
+
+.imgsec {
+  background-color: $greencolor;
+  height: 130vh;
+  margin-bottom: -7vh;
+}
+
+.containergrid {
+  margin-inline-start: 5vw;
+  height: 100vh;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 4vh;
+  grid-row-gap: 2vh;
+  margin-bottom: 10vh;
+  }
+
+@media screen and (max-width:768px) {
+  .containergrid {
+    margin-inline-start: 1vw;
+    grid-column-gap: 3vw;
+    grid-row-gap: 0vh;
+  }
+}
+
+.galim {
+  height: 25vh;
+  width: 16vw;
+}
+.galim:hover {
+  border: solid $purplecolor 0.8vh;
+ 
+ }
+
+@media screen and (max-width:768px) {
+  .galim {
+    height: 15vh;
+    width: 17vw;
+  }
+}
+
+
+hr {
+  color: $blackcolor;
+ }
+
+.videosec {
+  background-color: $yellowcolor;
+  margin-bottom: -10vh;
+}
+.containervideo {
+  margin-inline-start: 10vw;
+  height: 100vh;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 5vw;
+  grid-row-gap: 5vh;
+  margin-bottom: 10vh;
+}
+
+@media screen and (max-width: 768px) {
+  .containervideo {
+    margin-inline-start: 2vw;
+    grid-column-gap: 1vw;
+    grid-row-gap: 0vh;
+  }
+}
+
+
+iframe {
+  height: 25vh;
+  width: 16vw;
+  transition: 0.2s;
+}
+
+iframe:hover {
+  border: solid $purplecolor 0.8vh;
+}
+
+@media screen and (max-width: 768px) {
+  iframe {
+    height: 15vh;
+    width: 23vw;
+  }
+}
+
+.btn {
+  color: $blackcolor;
+  background-color: $yellowcolor;
+  transition: 1s;
+  border: solid $blackcolor;
+  width: 100%;
+}
+.btn:hover {
+  background-color: $purplecolor;
+  border: solid $blackcolor;
+}
+.btn:active {
+  background-color: $whitecolor;
+}
+
+.footer {
+  background-color: $purplecolor;
+  height: 30vh;
+  position: relative;
+
+  & p {
+    position: absolute;
+    left: 0vw;
+    top: 12vh;
+    color: $blackcolor;
+  }
+}

@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto:wght@100&display=swap");
+body {
+  color: #0d0d0d;
+  background-color: #f2f2f2;
+  direction: rtl;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  direction: rtl;
+}
+
+h1 {
+  padding: 3vh;
+  font-family: "pattaya";
+  color: #0d0d0d;
+  transition: 1s;
+  direction: rtl;
+  text-align: center;
+}
+
+h1:hover {
+  color: #9453a6;
+  font-size: 8vh;
+}
+
+h2,
+h4,
+h5 {
+  font-family: "henny-penny";
+}
+
+h4:hover {
+  color: #8cbf3f;
+}
+
+h2 {
+  padding: 1vw;
+  direction: rtl;
+}
+
+h3 {
+  direction: rtl;
+  color: #9453a6;
+}
+
+p {
+  text-align: justify;
+  padding: 3vw;
+  direction: rtl;
+}
+
+header {
+  direction: ltr;
+}
+
+.navbar {
+  background-color: #9453a6;
+  position: relative;
+  height: 40vh;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .halufi {
+    display: none;
+  }
+}
+.thetoggler {
+  background-color: #8cbf3f;
+}
+
+@media screen and (min-width: 768px) {
+  .thetoggler {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .halufi {
+    height: 10vh;
+    width: 23vw;
+    overflow: auto;
+    background-color: #f2cc0f;
+    border-radius: 30%;
+    border: solid #0d0d0d;
+    font-weight: 600;
+    margin-block: 1vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .collapse {
+    position: absolute;
+    top: 7vh;
+    width: 35vw;
+    margin-right: -75vw;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container-fluid {
+  background-color: #f2cc0f;
+  position: absolute;
+  top: 0vh;
+}
+
+.holonlogo {
+  position: absolute;
+  top: 8vh;
+  right: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+  .holonlogo {
+    position: absolute;
+    top: 3vh;
+    height: 20vh;
+    width: 40vw;
+  }
+}
+.p-5 {
+  background-color: #f2f2f2;
+}
+
+.colored {
+  background-color: #8cbf3f;
+}
+
+hr {
+  color: #8cbf3f;
+}
+
+.footer {
+  background-color: #9453a6;
+  height: 30vh;
+  position: relative;
+}
+.footer p {
+  position: absolute;
+  left: 0vw;
+  top: 12vh;
+  color: #0d0d0d;
+}
+
+.mayor {
+  background-color: #f2cc0f;
+  align-items: center;
+  text-align: center;
+  direction: rtl;
+  border: solid #0d0d0d;
+  height: 90vh;
+  width: 70vw;
+  -webkit-margin-end: 15vw;
+          margin-inline-end: 15vw;
+  margin-bottom: 10vh;
+}
+.mayor p {
+  padding: 2vh;
+}
+
+img {
+  height: 30vh;
+  width: 20vw;
+}
+
+@media screen and (max-width: 768px) {
+  .mayor {
+    height: 120vh;
+    width: 90vw;
+    margin-inline: 5vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .moti {
+    width: 40vw;
+  }
+}/*# sourceMappingURL=about.css.map */
